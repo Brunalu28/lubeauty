@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="images/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+
+        <!-- menu de opções -->
+
+    <header>
+        <header class="max-width bg" id="Home">
+            <div class="container">
+                <nav class="menu">
+                    <div class="logo"></div>
+                    <div class="desktop-menu">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#about">MARCAS</a></li>
+                            <li><a href="#service">PRODUTOS</a></li>
+                            <li><a href="login.html">LOGIN</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu">
+                        <i class="fa fa-bars"></i>
+                            <ul id="links">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#about">MARCAS</a></li>
+                                <li><a href="#service">PRODUTOS</a></li>
+                                <li><a href="login.html">LOGIN</a></li>
+                            </ul>
+                    </div>
+                </nav>
+
+                <!-- imagem e formulário de cadastro -->
+
+            <section class="max-width bg" id="login">
+                <div class="container">
+                    <div class="titulo">
+                        <h2 class="text-md-color-roxa">Login</h2>
+                        <div class="line">
+                            <div class="text-titulo">Realize seu cadastro</div>
+                        </div>
+                    </div>
+                <div class="aling">
+                    <div class="main-login">
+                        <div class="left-login">
+                            <div class="imagem">
+                                <img src="images/images/esmaltespng.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-login">
+                            <div class="card-login">
+                                <div class="textfield">
+                                    <label for="Nome">Nome</label>
+                                    <input type="nome" name="nome" placeholder="Nome">
+                                </div>
+                                <div class="textfield">
+                                    <label for="usuario">Usuário</label>
+                                    <input type="text" name="usuario" placeholder="Usuário">
+                                </div>
+                                <div class="textfield">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" name="senha" placeholder="Digite sua senha">
+                                </div>
+                                <button class="btn-login">Login</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+            </section>
+
+            <!-- rodapé -->
+
+            <footer>
+                <div class="container">
+                    <p class="text-pq">GitHub: Brunalu28</p>
+                    <p class="text-pq">Copyright © 2022 - site em construção.</p>
+                </div>
+            </footer>
+
+            <button id="back-to-top">^</button>
+        </header>
+
+        <!-- Botão de subir -->
+
+        <script>
+
+            var btn = document.querySelector("#back-to-top");
+            btn.addEventListener("click", function() {
+                window.scrollTo(0, 0);
+            });
+        </script>
+
+    </body>
+</html>
