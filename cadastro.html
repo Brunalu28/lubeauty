@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="images/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <!-- menu de opções -->
+
+    <header>
+        <header class="max-width bg" id="Home">
+            <div class="container">
+                <nav class="menu">
+                    <div class="logo"></div>
+                    <div class="desktop-menu">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="login.html">LOGIN</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu">
+                        <i class="fa fa-bars"></i>
+                            <ul id="links">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="login.html">LOGIN</a></li>
+                            </ul>
+                    </div>
+                </nav>
+
+                <!-- imagem e formulário de cadastro -->
+
+            <section class="max-width bg" id="cadastro">
+                <div class="container">
+                    <div class="titulo">
+                        <h2 class="text-md-color-roxa">Cadastro</h2>
+                        <div class="line">
+                            <div class="text-titulo">Realize seu cadastro</div>
+                        </div>
+                    </div>
+                <div class="aling-cadastro">
+                    <div class="main-cadastro">
+                        <div class="left-cadastro">
+                            <div class="imagem-cadastro">
+                                <img src="images/images/cosmeticos.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-cadastro">
+                            <div class="card-cadastro">
+                                <div class="textfield">
+                                    <label for="Nome">Nome</label>
+                                    <input type="name" name="nome" placeholder="Nome">
+                                </div>
+                                <div class="textfield">
+                                    <label for="Email">Email</label>
+                                    <input type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="textfield">
+                                    <label for="usuario">Usuário</label>
+                                    <input type="username" name="usuario" placeholder="Usuário">
+                                </div>
+                                <div class="textfield">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" name="senha" placeholder="Digite sua senha">
+                                </div>
+                                <button type="submit" class="btn-cadastro" onclick="dialog.showModal()">Cadastrar</button>
+                                <div class="footer">
+                                    <span>Faça login com as redes sociais:</span>
+                                    <div class="social-fields">
+                                        <div class="social-field google">
+                                            <a href="https://accounts.google.com/">
+                                                <i class="fa-brands fa-google"></i>
+                                                Login com Google
+                                            </a>
+                                        </div>
+                                        <div class="social-field facebook">
+                                            <a href="https://pt-br.facebook.com/">
+                                                <i class="fab fa-facebook-f"></i>
+                                                Login com Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <dialog open id="dialog">
+                                <p>Cadastro efetuado com sucesso!</p>
+                                <button id="btn-fechar" onclick="dialog.close()">Fechar</button>
+                            </dialog>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+            </section>
+
+            <!-- rodapé -->
+
+            <footer>
+                <div class="container">
+                    <p class="text-pq">GitHub: Brunalu28</p>
+                    <p class="text-pq">Copyright © 2022 - Luiza Bruna.</p>
+                </div>
+            </footer>
+
+            <button id="back-to-top">^</button>
+        </header>
+
+        <!--botão para confirmação de cadastro -->
+
+        <script>
+            const dialog = document.getElementById("dialog");
+
+            dialog.close();
+        </script>
+
+        <!-- botão de subir -->
+
+        <script>
+
+            var btn = document.querySelector("#back-to-top");
+            btn.addEventListener("click", function() {
+                window.scrollTo(0, 0);
+            });
+        </script>
+
+    </body>
+</html>

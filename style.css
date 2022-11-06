@@ -122,7 +122,6 @@ html, body {
     width: 20%;
     min-height: 130px;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 2 2%;
@@ -142,6 +141,7 @@ img{
     width: 70%;
     object-fit: contain;
 }
+
 button{
     padding: 10px 20px;
     background: #502;
@@ -152,6 +152,14 @@ button{
     transition: 0.8s ease;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+.btn-dior a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 80;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.8s ease;
 }
 
 button:hover{
@@ -342,9 +350,9 @@ header .right .imagem img{
     margin-bottom: 120px;
 }
 
-#about .box .text{
+/* #about .box .text{
     margin-right: 80px;
-}
+} */
 
 #about .box .text i{
     position: relative;
@@ -359,6 +367,7 @@ header .right .imagem img{
 
 #about .box h2{
     margin-top: 40px;
+    margin-left: 20px;
     text-align:start;
     font-weight: 300;
 }
@@ -366,6 +375,7 @@ header .right .imagem img{
 #about .box p, span{
     margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: 20px;
     text-align:start;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
@@ -406,8 +416,7 @@ header .right .imagem img{
 #service .container .card{
     position: absolute;
     width: 30%;
-    height: 80%;
-    top: -120px;
+    top: -50px;
     left: 0;
     right: 0;
     margin:0 auto;
@@ -424,9 +433,10 @@ header .right .imagem img{
     object-fit:contain;
 }
 #service .container .card button{
-    position: absolute;
+    position: fixed;
+    margin-right: 50px;
     bottom: 20px;
-    z-index: 9;
+    z-index: 10;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -475,14 +485,14 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.imagem{
-    width: 60%;
+.imagem-login{
+    width: 78%;
     object-fit: contain;
     display: flex;
     justify-content: flex-end;
     margin: auto;
 }
-.aling{
+.aling-login{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -494,7 +504,7 @@ body{
     align-items: center;
 }
 .card-login{
-    width: 50%;
+    width: 60%;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -520,6 +530,179 @@ body{
     outline: none;
     box-sizing: border-box;
 }
+.btn-login{
+    margin-left: 38%;
+}
+.btn-login a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 80;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.8s ease;
+}
+
+/* página de cadastro */
+
+body{
+    margin: 0px;
+}
+.main-cadastro{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-cadastro{
+    width: 60%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+.imagem-cadastro{
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+}
+.aling-cadastro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.right-cadastro{
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card-cadastro{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #bf899d;
+    border-radius: 1px;
+    box-shadow: 0px 10px 40px rgba(85, 0, 34, 0.471);
+    position: relative;
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+.btn-cadastro {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 80;
+    text-decoration: none;
+    transition: 0.8s ease;
+    margin-top: 8px;
+}
+#dialog{
+    margin-top: 20%;
+    margin-left: 42%;
+    padding: 20px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 10px 40px rgba(30, 13, 20, 0.659);
+}
+#dialog p{
+    margin-top: 20px;
+}
+#dialog #btn-fechar{
+    margin-left: 50%;
+
+}
+.footer span{
+    color: #fff;
+    text-align-last: center;
+    text-shadow: #2B2B2B;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 0px;
+}
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field.google {
+    background: linear-gradient(to right, #e56c2a, #c64427);
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #12316b, #2a5298);
+}
+
+
+
+/* pagina de produtos */
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -40px;
+    margin-bottom: 60px;
+}
+.produto{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.produto img{
+    width:auto;
+    align-items: center;
+}
+
+.produto h2{
+    font-weight: 800;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 10px;
+}
+.produto p{
+    font-weight: 500;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.produto button.btn-compre{
+    margin-top: 20px;
+    margin-left: 60px
+}
+
+
 
 /* rodapé */
 
