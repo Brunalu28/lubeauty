@@ -1,5 +1,3 @@
-# Site de produtos de beleza
-
-Aplicação em construção com html e css.
+# Beauty products store using html and css.
 
 <img src="images/images/logo.png" width= "100%">
