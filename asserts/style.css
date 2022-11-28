@@ -64,13 +64,13 @@ html, body {
     background: #593643;
     color: #fff;
 }
-.logo{
-    background: url('images/images/logo.png') no-repeat;
+.logo img{
+    background: no-repeat;
     background-size: contain;
     width: 130px;
     height: 80px;
     position: relative;
-    top: 20px;
+    top: 8px;
     z-index: 9;
 }
 .menu{
@@ -741,6 +741,11 @@ img.p1{
     font-size: 25px;
     margin-top: 20px;
 }
+.preço input{
+    margin-top: 20px;
+	padding: 12px;
+	border-radius: 30px;
+}
 /* .estrelas_produto{
     color: #f2ba14;
 } */
@@ -780,6 +785,7 @@ img.p1{
     padding-left: 10%;
     padding-right: 10%;
 }
+
 /* Carrosel da página de produto específico */
 
 
@@ -845,6 +851,91 @@ img.p1{
     z-index: 1;
 }
 
+/* carrinho de compras */
+
+.carrinho{
+    width: 100%;
+    border-radius: 7px;
+    align-items: center;
+    grid-column: 1/span 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carrinho .lista .item {
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+}
+.compras{
+    margin-left: 10rem;
+    grid-row: 1/span 2;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 5rem;
+    grid-column-start: 5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    color: #593643;
+}
+#novoItem.adicionar {
+    grid-row: 1/span 2;
+    background-color: #fff;
+    border-radius: 7px;
+    grid-column-start: 5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    color: #593643;
+
+}
+#nome, #quantidade{
+	padding: 12px;
+	border-radius: 10px;
+}
+.carrinho_compras{
+    margin: 0;
+    display: grid;
+    row-gap: 3rem;
+    column-gap: 1rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    grid-row: 1/span 2;
+    border-radius: 7px;
+    grid-column-start: 5;
+    display: flex;
+    row-gap: 2rem;
+}
+#cadastrar.cadastrar{
+    padding: 10px 20px;
+    background: #502;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.compras .subtotal_carrinho p input{
+    margin-top: 10px;
+    text-align: center;
+    padding: 0;
+}
 /* rodapé */
 
 

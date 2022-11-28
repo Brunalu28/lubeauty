@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MISS DIOR</title>
-        <link rel="shortcut icon" href="images/images/favicon-32x32.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="asserts/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     </head>
@@ -18,7 +18,9 @@
             <header class="max-width bg" id="Home">
                 <div class="container">
                     <nav class="menu">
-                        <div class="logo"></div>
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
                         <div class="desktop-menu">
                             <ul>
                                 <li><a href="index.html">HOME</a></li>
@@ -37,9 +39,9 @@
                         </div>
                     </nav>
         <main>
-            <h1 class="titlep1">PERFUME DIOR MISS DIOR FEMININO EAU DE PARFUM </h1>
+            <h1 class="titlep1" id="nome" >PERFUME DIOR MISS DIOR FEMININO EAU DE PARFUM </h1>
             <section class="container1">
-                <img src="images/images/dior11.webp" class="p1">
+                <img src="images/dior11.webp" class="p1">
                 <div class="description">
                     <p class="est">Disponível</p>
                     <p class="estrelas_produto"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
@@ -47,9 +49,12 @@
                     <div class="preço">
                         <p class="valor">R$ 429,00</p>
                         <p class="valor_parcelado">ou 10x de R$ 42,90</p>
-                    </div>
-                    <button type="submit" class="btn-compra">ADICIONAR AO CARRINHO</button>
+                    <form action="" class="adicionar" id="novoItem">
+                        <input type="number" name="quantidade" id="quantidade">
+                        <button type="submit" class="btn-compra" value="Adicionar" id="cadastrar">ADICIONAR AO CARRINHO</button>
+                    </form>
                 </div>
+            </div>
 
                     <div class="detalhes">
                         <h2 class="titledet"></i>DETALHES</h2>
@@ -72,8 +77,9 @@
                 <p class="informaçao">O icônico laço de Miss Dior é uma obra de arte em si mesmo. Produto do excepcional savoir-faire artesanal, cada fita bordada é uma peça única e uma verdadeira criação da alta costura.</p>
                 <p class="informaçao">Para envolver o frasco, uma fita excepcional foi trabalhada em uma das mais renomadas oficinas de fabricação de fitas francesas, conhecida por sua dedicação de décadas a desfiles de alta costura. Elaborada ao longo de meses de trabalho usando teares tradicionais de tecelagem, nasceu uma fita Jacquard – com mais de 396 fios e 12.000 pontos em cada centímetro. Esses centímetros de fita receberam a mesma criatividade, tempo e atenção que os que cobrem os mais sofisticados vestidos nas passarelas.</p>
             </div>
-            <img src="images/images/backgroundmissdior.webp" class="p2">
+            <img src="images/backgroundmissdior.webp" class="p2">
             </section>
+
 
             <!-- rodapé -->
 

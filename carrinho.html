@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carrinho de compras</title>
-        <link rel="shortcut icon" href="images/images/favicon-32x32.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="asserts/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     </head>
@@ -18,7 +18,9 @@
             <header class="max-width bg" id="Home">
                 <div class="container">
                     <nav class="menu">
-                        <div class="logo"></div>
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
                         <div class="desktop-menu">
                             <ul>
                                 <li><a href="index.html">HOME</a></li>
@@ -36,3 +38,35 @@
                                 </ul>
                         </div>
                     </nav>
+                <main>
+                    <section class="carrinho_compras">
+                    <div class="carrinho">
+                    <ul class="lista" id="lista">
+
+                    </ul>
+                </div>
+                <div class="compras">
+                    <h2 class="titulo_resumo">MEU CARRINHO</h2>
+                    <form action="" class="adicionar" id="novoItem">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" name="quantidade" id="quantidade">
+                        <input type="submit" value="Adicionar" class="cadastrar" id="cadastrar">
+                    </form>
+            </section>
+
+            <!-- rodapé -->
+            <footer>
+                <div class="container">
+                    <p class="text-pq">GitHub: Brunalu28</p>
+                    <p class="text-pq">Copyright © 2022 - Luiza Bruna.</p>
+                </div>
+            </footer>
+            </main>
+
+                <script src="js/main.js"></script>
+            </header>
+        </header>
+    </body>
+</html>
